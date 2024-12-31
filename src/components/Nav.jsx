@@ -12,7 +12,7 @@ export default function Nav() {
 
   return (
     <div className="shadow-md fixed w-full top-0 left-0 py-5">
-      <div className="flex justify-between items-center mx-11 relative max-[768px]:mx-2">
+      <div className="flex justify-between items-center mx-11 relative max-[768px]:mx-4">
         <div className="w-full max-w-40 max-[768px]:max-w-24">
             <img src={Logo} alt="logo" />
         </div>
