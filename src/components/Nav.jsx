@@ -59,8 +59,8 @@ export default function Nav() {
                 contact
                 </li>
             </ul>
-            <div className="absolute bottom-4">
-                <p>Copyright &copy;. 2024 | AA</p>
+            <div className="absolute bottom-24">
+                <p>Copyright &copy;. 2024<span className="block">Arjay Altamera</span></p>
             </div>
         </div>
 
