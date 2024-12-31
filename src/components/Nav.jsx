@@ -12,7 +12,7 @@ export default function Nav() {
 
   return (
     <div className="shadow-md fixed w-full top-0 left-0 py-5">
-      <div className="flex justify-between items-center mx-11 relative">
+      <div className="flex justify-between items-center mx-11 relative max-[768px]:mx-2">
         <div className="w-full max-w-40 max-[768px]:max-w-24">
             <img src={Logo} alt="logo" />
         </div>
@@ -64,7 +64,12 @@ export default function Nav() {
             </div>
         </div>
 
-        <button onClick={toggleMenu} className="p-2 md:hidden">
+        <button
+          onClick={toggleMenu}
+          className={`p-2 md:hidden transform transition-transform duration-300 ${
+            isMenuOpen ? "rotate-180" : "rotate-0"
+          }`}
+        >
           {/* Conditionally render the icons based on state */}
           {isMenuOpen ? (
             <IoClose className="text-black w-6 h-6" />
